@@ -73,7 +73,4 @@ print $timestamp ."\n";
 $timestamp =time();
 echo date("Y/m/d",$timestamp);
 
-echo "NEW";
-
-
 
