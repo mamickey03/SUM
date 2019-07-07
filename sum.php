@@ -27,7 +27,53 @@ function b($arr){
     
 }
 $array = array(1,3,5,7,9);
-echo b($array);
-
- echo "更新";
+echo b($array) ."\n";
  
+//5.次のビルトイン関数の用途、使い方を調べて実際に使ってみてください。
+//strip_tags
+
+$string = "<h1>ビルトイン関数</h1>"
+  . "<p>タグ取り除きます</p>";
+echo strip_tags($string) ."\n";
+
+//array_push
+
+$fruits = array("apple","banana","peach");
+    array_push($fruits,"grape","strawberry");
+    print_r ($fruits) ."\n";
+    
+//array_merge
+
+$a = array(
+    0 => "blue",
+    1 => "pink",
+    "a" => "black",
+    "b" => "green",
+    );
+    
+$b = array(
+    1 => "blue",
+    2 => "pink",
+    "b" => "green"
+    );
+    
+$result= array_merge($a,$b);
+print_r($result) ."\n";
+
+//time, mktime
+
+$now = time();
+print $now ."\n";
+
+$timestamp =mktime(0,0,0,7,7,2019);
+print $timestamp ."\n";
+
+//date
+
+$timestamp =time();
+echo date("Y/m/d",$timestamp);
+
+echo "NEW";
+
+
+
